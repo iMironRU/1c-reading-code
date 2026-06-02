@@ -11,8 +11,6 @@ docs_dir: chapters
 theme:
   name: material
   language: ru
-  logo: ../assets/img/cover.png
-  favicon: ../assets/img/cover.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -41,8 +39,7 @@ theme:
     - content.code.annotate
 
 plugins:
-  - search:
-      lang: ru
+  - search
 
 markdown_extensions:
   - admonition

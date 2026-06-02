@@ -75,7 +75,23 @@
 
 ---
 
+## Скачать книгу
+
+Курс доступен для скачивания в нескольких форматах — выберите удобный:
+
+| Формат | Для чего |
+|--------|----------|
+| **EPUB** | Читалки: Apple Books, Google Play Books, Calibre |
+| **FB2** | Читалки: FBReader, AlReader, Foliate |
+| **PDF** | Печать и просмотр в PDF-ридере |
+| **DOCX** | Microsoft Word, LibreOffice |
+| **DOCX A4** | Word/LibreOffice, формат A4 для печати |
+| **HTML** | Браузер, один самодостаточный файл |
+
+[Перейти к релизам →](https://github.com/iMironRU/1c-semantic-reading/releases){ .md-button .md-button--primary }
+
+---
+
 ## О проекте
 
-Исходный код курса доступен на [GitHub](https://github.com/iMironRU/1c-semantic-reading).  
-Каждый параграф прошёл рецензию DeepSeek v4-pro и GPT-4.1.
+Исходный код курса доступен на [GitHub](https://github.com/iMironRU/1c-semantic-reading).
