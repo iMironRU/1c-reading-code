@@ -10,6 +10,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Один деплой одновременно; новый пуш отменяет предыдущий в очереди
 concurrency:
   group: pages
