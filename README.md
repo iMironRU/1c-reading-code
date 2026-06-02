@@ -173,17 +173,18 @@ scripts/             — скрипты рецензирования (DeepSeek, 
 
 ## Сборка
 
-При каждом пуше в `main` GitHub Actions автоматически собирает книгу в форматах:
+По расписанию (02:00 UTC ежедневно) или вручную GitHub Actions собирает книгу в шести форматах. Все файлы именуются с ревизией коммита:
 
-| Формат | Файл |
-|--------|------|
-| EPUB | book.epub |
-| FB2 | book.fb2 |
-| PDF | book.pdf |
-| HTML | book.html |
-| DOCX | book.docx |
+| Файл | Описание |
+|------|----------|
+| `1c-semantic-reading_rev_XXXXXXX.epub` | EPUB для читалок |
+| `1c-semantic-reading_rev_XXXXXXX.fb2`  | FB2 для читалок |
+| `1c-semantic-reading_rev_XXXXXXX.pdf`  | PDF (A5, размер из metadata.yaml) |
+| `1c-semantic-reading_rev_XXXXXXX.html` | HTML — один самодостаточный файл |
+| `1c-semantic-reading_rev_XXXXXXX.docx` | DOCX стандарт |
+| `1c-semantic-reading_rev_XXXXXXX_a4.docx` | DOCX A4 (210×297 мм, поля 25/20 мм) |
 
-Готовые файлы появляются в разделе **Releases**.
+Готовые файлы появляются в разделе **Releases** как черновые выпуски.
 
 ---
 
