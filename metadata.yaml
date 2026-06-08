@@ -35,5 +35,5 @@ pdf:
   font_main: "PT Serif"
   font_mono: "JetBrains Mono"
   font_size: "11pt"
-  margin_a5: "20mm 15mm 20mm 20mm"
-  margin_a4: "25mm 20mm 25mm 25mm"
+  margin_a5: "top=20mm,right=15mm,bottom=20mm,left=20mm"
+  margin_a4: "top=25mm,right=20mm,bottom=25mm,left=25mm"

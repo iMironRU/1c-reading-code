@@ -147,8 +147,8 @@ pdf:
   font_main: "PT Serif"
   font_mono: "JetBrains Mono"
   font_size: "11pt"
-  margin_a5: "20mm 15mm 20mm 20mm"
-  margin_a4: "25mm 20mm 25mm 25mm"
+  margin_a5: "top=20mm,right=15mm,bottom=20mm,left=20mm"
+  margin_a4: "top=25mm,right=20mm,bottom=25mm,left=25mm"
 YAML
 
     # Очистить placeholder-главу
@@ -379,15 +379,18 @@ print(m.group(1) if m else 'ready')
         if command -v xelatex &>/dev/null; then
             info "PDF A5..."
             local margin; margin=$(read_meta 'pdf.margin_a5')
-            pandoc "${file_list[@]}" "${pandoc_flags[@]}" \
+            if pandoc "${file_list[@]}" "${pandoc_flags[@]}" \
                 -V papersize=a5 \
                 -V "geometry:${margin}" \
                 -V mainfont="$(read_meta 'pdf.font_main')" \
                 -V monofont="$(read_meta 'pdf.font_mono')" \
                 -V fontsize="$(read_meta 'pdf.font_size')" \
                 --pdf-engine=xelatex \
-                -o "${base}_a5.pdf"
-            success "→ ${base}_a5.pdf"
+                -o "${base}_a5.pdf"; then
+                success "→ ${base}_a5.pdf"
+            else
+                warn "PDF A5 не собран — ошибка xelatex (см. лог выше)"
+            fi
         else
             warn "xelatex не найден, PDF пропущен. Установите TeX Live."
         fi

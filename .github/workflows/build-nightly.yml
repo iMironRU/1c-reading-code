@@ -17,7 +17,7 @@ jobs:
       should_build: ${{ steps.check.outputs.should_build }}
       site_enabled: ${{ steps.meta.outputs.site }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -68,7 +68,7 @@ jobs:
       site_enabled: ${{ needs.check.outputs.site_enabled }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Зависимости Python
         run: pip install pyyaml
