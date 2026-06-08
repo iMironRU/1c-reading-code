@@ -1,6 +1,39 @@
 title: "1С как иностранный язык"
+subtitle: "Учебный курс для абсолютных новичков"
 author: "Мирошниченко Александр (aka iMiron)"
-lang: ru
-cover-image: assets/img/cover.png
-toc-depth: 2
-pdf-papersize: a5
+author_url: "https://github.com/iMironRU"
+language: ru
+license: "CC BY 4.0"
+version: "0.9.0"
+
+# Отслеживание шаблона
+template_repo: "https://github.com/iMironRU/book-template"
+template_version: "v0.1.0"
+
+formats:
+  epub:     true
+  fb2:      true
+  pdf_a5:   true
+  pdf_a4:   false
+  html:     true
+  docx:     true
+  docx_a4:  false
+  site:     true
+
+release_filter: "review"
+nightly_filter: "all"
+
+artifacts: []
+
+site_url: "https://imironru.github.io/1c-semantic-reading"
+
+nightly:
+  enabled: true
+  branch: "main"
+
+pdf:
+  font_main: "PT Serif"
+  font_mono: "JetBrains Mono"
+  font_size: "11pt"
+  margin_a5: "20mm 15mm 20mm 20mm"
+  margin_a4: "25mm 20mm 25mm 25mm"

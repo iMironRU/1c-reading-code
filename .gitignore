@@ -2,9 +2,16 @@ output/
 book.md
 *.log
 .DS_Store
-.claude/
 
-# Review workflow
+# book-template артефакты сборки
+dist/
+book/
+RELEASE_NOTES.md
+
+# Review workflow (локальный)
 reviews/
 docs/review-status.json
 .env
+
+# Claude Code (локальные настройки)
+.claude/settings.local.json
