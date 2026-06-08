@@ -291,8 +291,16 @@ cmd_build() {
     local title version
     title=$(read_meta 'title')
     version=$(read_meta 'version')
+    # Явный slug из metadata.yaml — приоритет
     local slug
-    slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+    slug=$(read_meta 'slug' '')
+    if [[ -z "$slug" ]]; then
+        slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+        # Фолбек для кириллических названий (нет букв латиницы) — имя папки репо
+        if [[ ! "$slug" =~ [a-z]{2,} ]]; then
+            slug=$(basename "$(git rev-parse --show-toplevel 2>/dev/null || pwd)")
+        fi
+    fi
 
     mkdir -p dist
 
