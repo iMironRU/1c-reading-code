@@ -2,88 +2,91 @@
 
 - [О книге](README.md)
 
-## vvedenie
+## § 0.1. Что такое данные
 
-- [🔍 § 0.1. Что такое данные](chapters/00_vvedenie/00-01_chto_takoe_dannye.md)
-    - [🔍 § 0.2. От данных к информации](chapters/00_vvedenie/00-02_ot_dannyh_k_informacii.md)
-    - [🔍 § 0.3. Что такое программа и что такое исполнение](chapters/00_vvedenie/00-03_chto_takoe_programma.md)
-    - [🔍 § 0.4. Компьютер буквален](chapters/00_vvedenie/00-04_kompyuter_bukvalen.md)
-    - [🔍 § 0.5. Где здесь 1С: первый взгляд на предмет](chapters/00_vvedenie/00-05_gde_zdes_1s.md)
+- [🔍 1. Записанные сведения](chapters/00_vvedenie/00-01_chto_takoe_dannye.md)
+- [🔍 § 0.2. От данных к информации](chapters/00_vvedenie/00-02_ot_dannyh_k_informacii.md)
+- [🔍 § 0.3. Что такое программа и что такое исполнение](chapters/00_vvedenie/00-03_chto_takoe_programma.md)
+- [🔍 § 0.4. Компьютер буквален](chapters/00_vvedenie/00-04_kompyuter_bukvalen.md)
+- [🔍 § 0.5. Где здесь 1С: первый взгляд на предмет](chapters/00_vvedenie/00-05_gde_zdes_1s.md)
 
-## leksika
+## § 1.1. Переменные: имена для значений
 
-- [🔍 § 1.1. Переменные: имена для значений](chapters/01_leksika/01-01_peremennye.md)
-    - [🔍 § 1.2. Простые выражения и операторы](chapters/01_leksika/01-02_vyrazheniya_i_operatory.md)
-    - [🔍 § 1.3. Команда вывода: «Сообщить»](chapters/01_leksika/01-03_komanda_soobschit.md)
-    - [🔍 § 1.4. Условие: «Если — Тогда — КонецЕсли»](chapters/01_leksika/01-04_komanda_esli.md)
-    - [🔍 § 1.5. Чтение кода вслух](chapters/01_leksika/01-05_chtenie_koda.md)
-    - [🔍 § 1.6. Восстановление кода с пропусками](chapters/01_leksika/01-06_vosstanovlenie_koda.md)
+- [🔍 1. Зачем нужны имена для значений](chapters/01_leksika/01-01_peremennye.md)
+- [🔍 § 1.2. Простые выражения и операторы](chapters/01_leksika/01-02_vyrazheniya_i_operatory.md)
+- [🔍 § 1.3. Команда вывода: «Сообщить»](chapters/01_leksika/01-03_komanda_soobschit.md)
+- [🔍 § 1.4. Условие: «Если — Тогда — КонецЕсли»](chapters/01_leksika/01-04_komanda_esli.md)
+- [🔍 § 1.5. Чтение кода вслух](chapters/01_leksika/01-05_chtenie_koda.md)
+- [🔍 § 1.6. Восстановление кода с пропусками](chapters/01_leksika/01-06_vosstanovlenie_koda.md)
 
-## semantika
+## § 2.1. Семантика: что значит понимать программу
 
-- [🔍 § 2.1. Семантика: что значит понимать программу](chapters/02_semantika/02-01_semantika.md)
-    - [🔍 § 2.2. Типы значений: число, строка, булево, дата](chapters/02_semantika/02-02_tipy_znacheniy.md)
-    - [🔍 § 2.3. Что значит «выполнить» строку](chapters/02_semantika/02-03_vypolnit_stroku.md)
-    - [🔍 § 2.4. Перевод между кодом и русским языком](chapters/02_semantika/02-04_perevod.md)
+- [🔍 1. Форма и смысл](chapters/02_semantika/02-01_semantika.md)
+- [🔍 § 2.2. Типы значений: число, строка, булево, дата](chapters/02_semantika/02-02_tipy_znacheniy.md)
+- [🔍 § 2.3. Что значит «выполнить» строку](chapters/02_semantika/02-03_vypolnit_stroku.md)
+- [🔍 § 2.4. Перевод между кодом и русским языком](chapters/02_semantika/02-04_perevod.md)
 
-## struktura
+## § 3.1. Структура программы: последовательность, ветвление, цикл
 
-- [🔍 § 3.1. Структура программы: последовательность, ветвление, цикл](chapters/03_struktura/03-01_struktura_programmy.md)
-    - [🔍 § 3.2. Цикл «Пока»](chapters/03_struktura/03-02_tsikl_poka.md)
-    - [🔍 § 3.3. Цикл «Для каждого Из»](chapters/03_struktura/03-03_tsikl_dlya_kazhdogo.md)
-    - [🔍 § 3.4. Процедуры и функции](chapters/03_struktura/03-04_procedury_i_funkcii.md)
-    - [🔍 § 3.5. Параметры подробно: передача и область видимости](chapters/03_struktura/03-05_parametry_podrobno.md)
-    - [🔍 § 3.6. Блок-схемы как нотация](chapters/03_struktura/03-06_blok_shemy.md)
-    - [🔍 § 3.7. Прогонка алгоритмов на бумаге](chapters/03_struktura/03-07_progonka.md)
+- [🔍 1. Три кита структурного программирования](chapters/03_struktura/03-01_struktura_programmy.md)
+- [🔍 § 3.2. Цикл «Пока»](chapters/03_struktura/03-02_tsikl_poka.md)
+- [🔍 § 3.3. Цикл «Для каждого Из»](chapters/03_struktura/03-03_tsikl_dlya_kazhdogo.md)
+- [🔍 § 3.4. Процедуры и функции](chapters/03_struktura/03-04_procedury_i_funkcii.md)
+- [🔍 § 3.5. Параметры подробно: передача и область видимости](chapters/03_struktura/03-05_parametry_podrobno.md)
+- [🔍 § 3.6. Блок-схемы как нотация](chapters/03_struktura/03-06_blok_shemy.md)
+- [🔍 § 3.7. Прогонка алгоритмов на бумаге](chapters/03_struktura/03-07_progonka.md)
 
-## patterny
+## § 4.1. Что такое паттерн в коде
 
-- [🔍 § 4.1. Что такое паттерн в коде](chapters/04_patterny/04-01_chto_takoe_pattern.md)
-    - [🔍 § 4.2. Поиск элемента](chapters/04_patterny/04-02_poisk_elementa.md)
-    - [🔍 § 4.3. Перебор и обработка коллекции](chapters/04_patterny/04-03_perebor_i_obrabotka.md)
-    - [🔍 § 4.4. Агрегация: сумма, максимум, счётчик](chapters/04_patterny/04-04_agregaciya.md)
-    - [🔍 § 4.5. Проверки и защитный код](chapters/04_patterny/04-05_zashchitny_kod.md)
-    - [🔍 § 4.6. Распознавание паттернов в незнакомом коде](chapters/04_patterny/04-06_raspoznavanie.md)
+- [🔍 1. Слова и идиомы](chapters/04_patterny/04-01_chto_takoe_pattern.md)
+- [🔍 § 4.2. Поиск элемента](chapters/04_patterny/04-02_poisk_elementa.md)
+- [🔍 § 4.3. Перебор и обработка коллекции](chapters/04_patterny/04-03_perebor_i_obrabotka.md)
+- [🔍 § 4.4. Агрегация: сумма, максимум, счётчик](chapters/04_patterny/04-04_agregaciya.md)
+- [🔍 § 4.5. Проверки и защитный код](chapters/04_patterny/04-05_zashchitny_kod.md)
+- [🔍 § 4.6. Распознавание паттернов в незнакомом коде](chapters/04_patterny/04-06_raspoznavanie.md)
 
-## idiomy
+## § 5.1. Объекты, свойства и методы
 
-- [🔍 § 5.1. Объекты, свойства и методы](chapters/05_idiomy/05-01_obekty_svoystva_metody.md)
-    - [🔍 § 5.2. Обращение к данным: документы и справочники](chapters/05_idiomy/05-02_dostup_k_dannym.md)
-    - [🔍 § 5.3. Табличные части: коллекция строк внутри документа](chapters/05_idiomy/05-03_tablychnye_chasti.md)
-    - [🔍 § 5.4. Что такое ссылка и зачем она нужна](chapters/05_idiomy/05-04_chto_takoe_ssylka.md)
-    - [🔍 § 5.5. Типичные обороты реального кода](chapters/05_idiomy/05-05_tipichnye_oboroty.md)
-    - [🔍 § 5.6. Первое чтение фрагмента из настоящей конфигурации](chapters/05_idiomy/05-06_pervoe_chtenie.md)
+- [🔍 1. Значение с внутренней структурой](chapters/05_idiomy/05-01_obekty_svoystva_metody.md)
+- [🔍 § 5.2. Обращение к данным: документы и справочники](chapters/05_idiomy/05-02_dostup_k_dannym.md)
+- [🔍 § 5.3. Табличные части: коллекция строк внутри документа](chapters/05_idiomy/05-03_tablychnye_chasti.md)
+- [🔍 § 5.4. Что такое ссылка и зачем она нужна](chapters/05_idiomy/05-04_chto_takoe_ssylka.md)
+- [🔍 § 5.5. Типичные обороты реального кода](chapters/05_idiomy/05-05_tipichnye_oboroty.md)
+- [🔍 § 5.6. Первое чтение фрагмента из настоящей конфигурации](chapters/05_idiomy/05-06_pervoe_chtenie.md)
 
-## kontekst
+## § 6.1. Где живёт код и кто его вызывает
 
-- [🔍 § 6.1. Где живёт код и кто его вызывает](chapters/06_kontekst/06-01_gde_zhivyot_kod.md)
-    - [🔍 § 6.2. Документы как события бизнеса](chapters/06_kontekst/06-02_dokumenty_kak_sobytiya.md)
-    - [🔍 § 6.3. Жизненный цикл документа: от создания до проведения](chapters/06_kontekst/06-03_zhiznennyy_tsikl_dokumenta.md)
-    - [🔍 § 6.4. Регистры: куда сохраняются результаты](chapters/06_kontekst/06-04_registry.md)
-    - [🔍 § 6.5. Перевод: бизнес-задача ↔ код](chapters/06_kontekst/06-05_perevod_zadacha_kod.md)
+- [🔍 1. Код в вакууме и код в контексте](chapters/06_kontekst/06-01_gde_zhivyot_kod.md)
+- [🔍 § 6.2. Документы как события бизнеса](chapters/06_kontekst/06-02_dokumenty_kak_sobytiya.md)
+- [🔍 § 6.3. Жизненный цикл документа: от создания до проведения](chapters/06_kontekst/06-03_zhiznennyy_tsikl_dokumenta.md)
+- [🔍 § 6.4. Регистры: куда сохраняются результаты](chapters/06_kontekst/06-04_registry.md)
+- [🔍 § 6.5. Перевод: бизнес-задача ↔ код](chapters/06_kontekst/06-05_perevod_zadacha_kod.md)
 
-## kachestvo
+## § 7.1. Что значит «хороший» код
 
-- [🔍 § 7.1. Что значит «хороший» код](chapters/07_kachestvo/07-01_chto_takoe_khoroshiy_kod.md)
-    - [🔍 § 7.2. Обработка ошибок: Попытка и Исключение](chapters/07_kachestvo/07-02_obrabotka_oshibok.md)
-    - [🔍 § 7.3. Защитный код: проверки на входе](chapters/07_kachestvo/07-03_zashchitnyy_kod.md)
-    - [🔍 § 7.4. Производительность: что замедляет код](chapters/07_kachestvo/07-04_proizvoditelnost.md)
-    - [🔍 § 7.5. Читаемость: имена, комментарии, структура](chapters/07_kachestvo/07-05_chitaemost.md)
-    - [🔍 § 7.6. Критическое чтение: читать и оценивать](chapters/07_kachestvo/07-06_kriticheskoe_chtenie.md)
+- [🔍 1. Правильность — необходимое, но не достаточное условие](chapters/07_kachestvo/07-01_chto_takoe_khoroshiy_kod.md)
+- [🔍 § 7.2. Обработка ошибок: Попытка и Исключение](chapters/07_kachestvo/07-02_obrabotka_oshibok.md)
+- [🔍 § 7.3. Защитный код: проверки на входе](chapters/07_kachestvo/07-03_zashchitnyy_kod.md)
+- [🔍 § 7.4. Производительность: что замедляет код](chapters/07_kachestvo/07-04_proizvoditelnost.md)
+- [🔍 § 7.5. Читаемость: имена, комментарии, структура](chapters/07_kachestvo/07-05_chitaemost.md)
+- [🔍 § 7.6. Критическое чтение: читать и оценивать](chapters/07_kachestvo/07-06_kriticheskoe_chtenie.md)
 
-## sistema
+## § 8.1. Куда уходят данные после нажатия «Провести»
 
-- [🔍 § 8.1. Куда уходят данные после нажатия «Провести»](chapters/08_sistema/08-01_put_dannykh.md)
-    - [🔍 § 8.2. Где хранится логика: модули и их назначение](chapters/08_sistema/08-02_moduli.md)
-    - [🔍 § 8.3. Карта объектов конфигурации](chapters/08_sistema/08-03_karta_obyektov.md)
-    - [🔍 § 8.4. Три барьера впереди](chapters/08_sistema/08-04_baryery.md)
-    - [🔍 § 8.5. Директивы и области](chapters/08_sistema/08-05_direktivy.md)
-    - [🔍 § 8.6. Что такое типовая конфигурация](chapters/08_sistema/08-06_tipovaya.md)
+- [🔍 1. Проведение глазами системы](chapters/08_sistema/08-01_put_dannykh.md)
+- [🔍 § 8.2. Где хранится логика: модули и их назначение](chapters/08_sistema/08-02_moduli.md)
+- [🔍 § 8.3. Карта объектов конфигурации](chapters/08_sistema/08-03_karta_obyektov.md)
+- [🔍 § 8.4. Три барьера впереди](chapters/08_sistema/08-04_baryery.md)
+- [🔍 § 8.5. Директивы и области](chapters/08_sistema/08-05_direktivy.md)
+- [🔍 § 8.6. Что такое типовая конфигурация](chapters/08_sistema/08-06_tipovaya.md)
 
-## zavershenie
+## § 9.1. Контрольная задача: читать и пересказывать
 
-- [🔍 § 9.1. Контрольная задача: читать и пересказывать](chapters/09_zavershenie/09-01_kontrolnaya_zadacha.md)
-    - [🔍 § 9.2. Установка 1С и первое самостоятельное чтение кода](chapters/09_zavershenie/09-02_ustanovka.md)
-    - [🔍 § 9.3. Куда идти дальше: маршрут самостоятельного изучения](chapters/09_zavershenie/09-03_kuda_idti.md)
-    - [🔍 § 9.4. Как читать незнакомый код: рабочие приёмы](chapters/09_zavershenie/09-04_kak_chitat.md)
+- [🔍 1. Как работает контрольная задача](chapters/09_zavershenie/09-01_kontrolnaya_zadacha.md)
+- [🔍 § 9.2. Установка 1С и первое самостоятельное чтение кода](chapters/09_zavershenie/09-02_ustanovka.md)
+- [🔍 § 9.3. Куда идти дальше: маршрут самостоятельного изучения](chapters/09_zavershenie/09-03_kuda_idti.md)
+- [🔍 § 9.4. Как читать незнакомый код: рабочие приёмы](chapters/09_zavershenie/09-04_kak_chitat.md)
 
+## index.md
+
+- [🔍 1С как иностранный язык](chapters/index.md)

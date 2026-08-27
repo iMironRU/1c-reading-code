@@ -8,7 +8,7 @@ version: "0.9.0"
 
 # Отслеживание шаблона
 template_repo: "https://github.com/iMironRU/book-template"
-template_version: "v0.1.0"
+template_version: "v0.2.1"
 
 formats:
   epub:     true
@@ -25,7 +25,7 @@ nightly_filter: "all"
 
 artifacts: []
 
-site_url: "https://imironru.github.io/1c-semantic-reading"
+site_url: "https://imiron.ru/1c-semantic-reading/"
 
 nightly:
   enabled: true

@@ -1,6 +1,6 @@
 [book]
-title = "1С как иностранный язык"
-authors = ["Мирошниченко Александр (aka iMiron)"]
+title = "Название книги"        # обновляется через ./book.sh init
+authors = ["Автор"]
 language = "ru"
 src = "."
 
@@ -9,7 +9,7 @@ build-dir = "book"
 
 [output.html]
 site-url = "/"
-git-repository-url = "https://github.com/iMironRU/1c-semantic-reading"
+git-repository-url = ""
 edit-url-template = ""
 additional-js = ["theme/version.js"]
 additional-css = ["theme/book-extra.css"]
