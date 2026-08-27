@@ -25,7 +25,7 @@ nightly_filter: "all"
 
 artifacts: []
 
-site_url: "https://imiron.ru/1c-semantic-reading/"
+site_url: "https://imiron.ru/1c-reading-code/"
 
 nightly:
   enabled: true

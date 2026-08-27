@@ -20,7 +20,7 @@
 
 | Формат | Ссылка |
 |--------|--------|
-| 🌐 Онлайн | [Открыть сайт](https://imironru.github.io/1c-semantic-reading) |
+| 🌐 Онлайн | [Открыть сайт](https://imironru.github.io/1c-reading-code) |
 | 📖 EPUB | [Releases → последняя версия](../../releases/latest) |
 | 📄 PDF A5 | [Releases → последняя версия](../../releases/latest) |
 | 📋 FB2 | [Releases → последняя версия](../../releases/latest) |

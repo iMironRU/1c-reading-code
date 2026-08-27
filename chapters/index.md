@@ -92,10 +92,10 @@ status: review
 | **DOCX A4** | Word/LibreOffice, формат A4 для печати |
 | **HTML** | Браузер, один самодостаточный файл |
 
-[Перейти к релизам →](https://github.com/iMironRU/1c-semantic-reading/releases){ .md-button .md-button--primary }
+[Перейти к релизам →](https://github.com/iMironRU/1c-reading-code/releases){ .md-button .md-button--primary }
 
 ---
 
 ## О проекте
 
-Исходный код курса доступен на [GitHub](https://github.com/iMironRU/1c-semantic-reading).
+Исходный код курса доступен на [GitHub](https://github.com/iMironRU/1c-reading-code).
