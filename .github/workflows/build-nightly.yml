@@ -135,6 +135,16 @@ jobs:
           git push origin :refs/tags/nightly 2>/dev/null || true
           git tag nightly
 
+      - name: Собрать задачи Judge (tasks.json)
+        run: |
+          if [ -d tasks ]; then
+            python3 -m pip install --quiet jsonschema || true
+            mkdir -p dist
+            python3 scripts/build-tasks.py --out dist/tasks.json
+          else
+            echo "Папки tasks/ нет — книга не публикует задачи."
+          fi
+
       - name: Создать/обновить Pre-release
         uses: softprops/action-gh-release@v3
         with:

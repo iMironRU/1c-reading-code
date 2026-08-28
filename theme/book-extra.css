@@ -78,3 +78,45 @@
   a[href^="#"]:after,
   a[href^="/"]:after { content: ""; }
 }
+
+/* ─── Песочница: кнопка у листингов ```bsl,песочница ─────────────────── */
+
+.sandbox-block {
+    margin: 1em 0;
+}
+
+.sandbox-block > pre {
+    margin-bottom: 0;
+}
+
+.sandbox-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em 0.9em;
+    padding: 0.45em 0.8em;
+    border: 1px solid var(--quote-border, rgba(128, 128, 128, 0.35));
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    font-size: 0.85em;
+}
+
+.sandbox-run {
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.sandbox-run:hover {
+    text-decoration: underline;
+}
+
+.sandbox-note {
+    opacity: 0.6;
+}
+
+/* В печати кнопка не нужна — листинг остаётся листингом. */
+@media print {
+    .sandbox-bar { display: none; }
+    .sandbox-block > pre { border-radius: 5px; }
+}

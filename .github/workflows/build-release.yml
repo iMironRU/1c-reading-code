@@ -73,6 +73,16 @@ jobs:
           chmod +x book.sh
           ./book.sh build ${{ steps.meta.outputs.filter }}
 
+      - name: Собрать задачи Judge (tasks.json)
+        run: |
+          if [ -d tasks ]; then
+            python3 -m pip install --quiet jsonschema || true
+            mkdir -p dist
+            python3 scripts/build-tasks.py --out dist/tasks.json
+          else
+            echo "Папки tasks/ нет — книга не публикует задачи."
+          fi
+
       - name: Упаковать артефакты из metadata.yaml
         run: |
           python3 - << 'PY'

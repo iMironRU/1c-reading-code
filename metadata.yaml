@@ -6,6 +6,9 @@ language: ru
 license: "CC BY 4.0"
 version: "0.9.0"
 
+# Стабильный слаг книги для BSLexicon — не меняется при переименовании репозитория
+book_id: "1c-reading-code"
+
 # Отслеживание шаблона
 template_repo: "https://github.com/iMironRU/book-template"
 template_version: "v0.2.1"

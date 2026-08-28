@@ -23,3 +23,6 @@ theme/version.js
 
 # Исходный handoff-архив (содержимое в docs/handoff-v0.3-print/)
 book-template-v0.2-handoff.zip
+
+# Собирается из tasks/*.yaml командой ./book.sh tasks
+tasks.json
