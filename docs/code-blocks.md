@@ -9,8 +9,8 @@
 
 | Кучка | Блоков | Что это |
 |---|---:|---|
-| `песочница` | 161 | исполняется в тренажёре — кнопка «Запустить», проверяется гейтом |
-| `набросок` | 275 | чистый язык, но пока не исполняется: не хватает контекста или точек с запятой |
+| `песочница` | 226 | исполняется в тренажёре — кнопка «Запустить», проверяется гейтом |
+| `набросок` | 210 | чистый язык, но пока не исполняется: не хватает контекста или точек с запятой |
 | `платформа` | 20 | запросы, клиент-сервер, справочники — тренажёр этого не умеет по замыслу |
 | `шаблон` | 21 | форма конструкции с плейсхолдерами в угловых скобках |
 | `ловушка` | 5 | код, показанный нарочно неверным или бесконечным |
@@ -32,14 +32,77 @@
 
 **`текст`** — вообще не код.
 
-## `песочница` — 161
+## `песочница` — 226
 
 | Где | Первая строка | Почему |
 |---|---|---|
-| [chapters/01_leksika/01-04_komanda_esli.md:455](../chapters/01_leksika/01-04_komanda_esli.md) | `СтоимостьПокупки = 200 * 35;        // 7000` | исполняется |
-| [chapters/01_leksika/01-05_chtenie_koda.md:343](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Цикл с присваиванием значения переменной А` | исполняется |
-| [chapters/01_leksika/01-05_chtenie_koda.md:426](../chapters/01_leksika/01-05_chtenie_koda.md) | `А = 10;  // 10 — это магическое число из спецификации, см. д` | исполняется |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:451](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ПроцентСкидки = 10;` | исполняется |
+| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:41](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:121](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:161](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:274](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `А = 10` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:294](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:39](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:83](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:146](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Сумма = 1000` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:226](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:246](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 200` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:266](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена1 = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:17](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:33](../chapters/01_leksika/01-01_peremennye.md) | `Сумма = 250 * 4` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:81](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:142](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:212](../chapters/01_leksika/01-01_peremennye.md) | `ЦенаЗаШтуку = 45` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:270](../chapters/01_leksika/01-01_peremennye.md) | `А = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:309](../chapters/01_leksika/01-01_peremennye.md) | `СтавкаЗаЧас = 500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:329](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 200` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-01_peremennye.md:382](../chapters/01_leksika/01-01_peremennye.md) | `ЦенаТетради = 35` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:87](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сумма = 100 + 50 * 2` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:129](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сумма = (100 + 50) * 2` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:181](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Имя = "Иван"` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:225](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `ЦенаЗаШтуку = 35` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:304](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `А = 10` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:15](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаЗаШтуку = 35` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:65](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Привет!")` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:132](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Здравствуйте!")` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:158](../chapters/01_leksika/01-03_komanda_soobschit.md) | `А = 10` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:240](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаЗаШтуку = 35` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:310](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Раз")` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:326](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Раз" + " " + "Два" + " " + "Три")` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:340](../chapters/01_leksika/01-03_komanda_soobschit.md) | `А = 5` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:388](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Имя = "Иван"` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:464](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаРучки = 25` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-04_komanda_esli.md:27](../chapters/01_leksika/01-04_komanda_esli.md) | `Найден = Истина` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-04_komanda_esli.md:123](../chapters/01_leksika/01-04_komanda_esli.md) | `Цена = 1500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-04_komanda_esli.md:292](../chapters/01_leksika/01-04_komanda_esli.md) | `СтоимостьПокупки = 3500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-04_komanda_esli.md:497](../chapters/01_leksika/01-04_komanda_esli.md) | `СтоимостьПокупки = 200 * 35;        // 7000` | исполняется |
+| [chapters/01_leksika/01-05_chtenie_koda.md:31](../chapters/01_leksika/01-05_chtenie_koda.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:108](../chapters/01_leksika/01-05_chtenie_koda.md) | `ЦенаЗаШтуку = 35` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:226](../chapters/01_leksika/01-05_chtenie_koda.md) | `Скидка = 10  // постоянным клиентам — десять процентов` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:262](../chapters/01_leksika/01-05_chtenie_koda.md) | `ПроцентСкидки = 0  // По правилам — никаких скидок на акцион` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:276](../chapters/01_leksika/01-05_chtenie_koda.md) | `ПроцентСкидки = 0  // Присваиваем ПроцентСкидки значение 0` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:294](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Расчёт стоимости покупки с учётом скидки постоянного клие` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:382](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сумма = 500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:427](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Цикл с присваиванием значения переменной А` | исполняется |
+| [chapters/01_leksika/01-05_chtenie_koda.md:456](../chapters/01_leksika/01-05_chtenie_koda.md) | `Имя = "Анна Петрова"` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-05_chtenie_koda.md:542](../chapters/01_leksika/01-05_chtenie_koda.md) | `А = 10;  // 10 — это магическое число из спецификации, см. д` | исполняется |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:17](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:39](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 100` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:79](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 200` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:99](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 200` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:299](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `СтоимостьПокупки = 3500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:396](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:467](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:498](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 5` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:522](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Возраст = 25` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:548](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ПроцентСкидки = 10;` | исполняется |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:556](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Сумма = 1500` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:590](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ОстатокРучек = 7` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:11](../chapters/02_semantika/02-01_semantika.md) | `А = 5` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:39](../chapters/02_semantika/02-01_semantika.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:94](../chapters/02_semantika/02-01_semantika.md) | `Цена = 250` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:226](../chapters/02_semantika/02-01_semantika.md) | `Возраст = 25` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:256](../chapters/02_semantika/02-01_semantika.md) | `ЦенаЗаКилограмм = 150` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-01_semantika.md:282](../chapters/02_semantika/02-01_semantika.md) | `СтоимостьПокупки = 3500` | исполняется — рядом лежит вариант с точками с запятой |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:15](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `Цена = 250;` | исполняется |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:39](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `Х = 250;        // сейчас Х — число` | исполняется |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:53](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `Цена = 250;` | исполняется |
@@ -51,7 +114,9 @@
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:252](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ДатаНачала = '20250101';` | исполняется |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:260](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ДатаНачала = '20250101';` | исполняется |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:385](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `// Данные о продаже` | исполняется |
-| [chapters/02_semantika/02-02_tipy_znacheniy.md:581](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ВозрастКлиента = 25;` | исполняется |
+| [chapters/02_semantika/02-02_tipy_znacheniy.md:472](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `А = 5 + 3` | исполняется — рядом лежит вариант с точками с запятой |
+| [chapters/02_semantika/02-02_tipy_znacheniy.md:599](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ВозрастКлиента = 25;` | исполняется |
+| [chapters/02_semantika/02-02_tipy_znacheniy.md:611](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `// Данные о продаже` | исполняется — рядом лежит вариант с точками с запятой |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:134](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `А = 10;` | исполняется |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:239](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `// Расчёт стоимости с учётом скидок и наценки за самовывоз` | исполняется |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:336](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `А = 5;` | исполняется |
@@ -198,126 +263,61 @@
 | [chapters/08_sistema/08-01_put_dannykh.md:173](../chapters/08_sistema/08-01_put_dannykh.md) | `Процедура ОбработкаПроведения(Отказ, РежимПроведения)` | исполняется |
 | [chapters/08_sistema/08-01_put_dannykh.md:194](../chapters/08_sistema/08-01_put_dannykh.md) | `Процедура ОбработкаПроведения(Отказ, РежимПроведения)` | исполняется |
 
-## `набросок` — 275
+## `набросок` — 210
 
 | Где | Первая строка | Почему |
 |---|---|---|
 | [chapters/00_vvedenie/00-02_ot_dannyh_k_informacii.md:197](../chapters/00_vvedenie/00-02_ot_dannyh_k_informacii.md) | `- ставка работника (число)` | parser: Неожиданный токен «-» |
-| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:41](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:115](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:147](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:251](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `А = 10` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-03_chto_takoe_programma.md:262](../chapters/00_vvedenie/00-03_chto_takoe_programma.md) | `Цена = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:39](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:59](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Сумма = Цена * Количество` | parser: Ожидалось «;», получено «Цена» |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:77](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:101](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | parser: Ожидалось «;», получено «Сообщит» |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:132](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Сумма = 1000` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:204](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:215](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 200` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:227](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена1 = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:288](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Среднее = (Цена1 + Цена2 + Цена3) / 3` | parser: Ожидалось «;», получено «eof» |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:65](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Сумма = Цена * Количество` | parser: Ожидалось «;», получено «Цена» |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:115](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Цена = 250` | parser: Ожидалось «;», получено «Сообщит» |
+| [chapters/00_vvedenie/00-04_kompyuter_bukvalen.md:336](../chapters/00_vvedenie/00-04_kompyuter_bukvalen.md) | `Среднее = (Цена1 + Цена2 + Цена3) / 3` | parser: Ожидалось «;», получено «eof» |
 | [chapters/00_vvedenie/00-05_gde_zdes_1s.md:25](../chapters/00_vvedenie/00-05_gde_zdes_1s.md) | `Платформа 1С  =  «1С: Предприятие 8.3»` | lexer: Неизвестный символ ««» |
 | [chapters/00_vvedenie/00-05_gde_zdes_1s.md:144](../chapters/00_vvedenie/00-05_gde_zdes_1s.md) | `Отчёт «Остатки на складе»          (сколько чего сейчас лежи` | lexer: Неизвестный символ ««» |
-| [chapters/01_leksika/01-01_peremennye.md:17](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:25](../chapters/01_leksika/01-01_peremennye.md) | `Сумма = 250 * 4` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:67](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:122](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:183](../chapters/01_leksika/01-01_peremennye.md) | `ЦенаЗаШтуку = 45` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:229](../chapters/01_leksika/01-01_peremennye.md) | `А = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:258](../chapters/01_leksika/01-01_peremennye.md) | `СтавкаЗаЧас = 500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:269](../chapters/01_leksika/01-01_peremennye.md) | `Цена = 200` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-01_peremennye.md:314](../chapters/01_leksika/01-01_peremennye.md) | `ЦенаТетради = 35` | чистый язык, не хватает точек с запятой |
 | [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:9](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Цена = 250` | parser: Ожидалось «;», получено «Сумма» |
 | [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:47](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сумма = 1000` | parser: Ожидалось «;», получено «Сумма» |
 | [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:64](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `+    сложение         Сумма = Цена + Налог` | parser: Неожиданный токен «+» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:87](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сумма = 100 + 50 * 2` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:123](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сумма = (100 + 50) * 2` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:169](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Имя = "Иван"` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:186](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сообщить("Сумма покупки: " + Сумма)` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:205](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `ЦенаЗаШтуку = 35` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:255](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  10 + 5 * 2` | parser: Ожидалось «;», получено «)» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:270](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `А = 10` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:280](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  Результат = "Цена: " + 100` | parser: Ожидалось «;», получено «)» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:300](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Среднее = (А + Б + В + Г) / 4` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:314](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  10 + 5 * 2 = 10 + 10 = 20` | parser: Ожидалось «;», получено «)» |
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:359](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `ЦенаЗаШтуку = 18` | parser: Ожидалось «;», получено «Количество» |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:15](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаЗаШтуку = 35` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:53](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Привет!")` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:114](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Здравствуйте!")` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:132](../chapters/01_leksika/01-03_komanda_soobschit.md) | `А = 10` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:176](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить(ТекстСообщения, СтатусСообщения)` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:200](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаЗаШтуку = 35` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:251](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Раз")` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:259](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить("Раз" + " " + "Два" + " " + "Три")` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:267](../chapters/01_leksika/01-03_komanda_soobschit.md) | `А = 5` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:279](../chapters/01_leksika/01-03_komanda_soobschit.md) | `а)  Сообщить("Привет")` | parser: Ожидалось «;», получено «)» |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:303](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Имя = "Иван"` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:371](../chapters/01_leksika/01-03_komanda_soobschit.md) | `ЦенаРучки = 25` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:397](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Имя + ", тебе " + ВозрастВГодах + " лет, осталось до 30 — " ` | parser: Ожидалось «;», получено «+» |
-| [chapters/01_leksika/01-03_komanda_soobschit.md:411](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить(Имя + ", тебе " + ВозрастВГодах + " лет, осталось д` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-04_komanda_esli.md:27](../chapters/01_leksika/01-04_komanda_esli.md) | `Найден = Истина` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-04_komanda_esli.md:67](../chapters/01_leksika/01-04_komanda_esli.md) | `ДорогойТовар = (Цена > 1000)` | parser: Ожидалось «;», получено «Сообщить» |
-| [chapters/01_leksika/01-04_komanda_esli.md:116](../chapters/01_leksika/01-04_komanda_esli.md) | `Цена = 1500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-04_komanda_esli.md:198](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Цена > 1000 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-04_komanda_esli.md:240](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Цена > 5000 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-04_komanda_esli.md:273](../chapters/01_leksika/01-04_komanda_esli.md) | `СтоимостьПокупки = 3500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-04_komanda_esli.md:344](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Возраст < 7 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-04_komanda_esli.md:358](../chapters/01_leksika/01-04_komanda_esli.md) | `а)  Если Цена > 1000 Сообщить("Дорого"); КонецЕсли;` | parser: Ожидалось «;», получено «)» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:31](../chapters/01_leksika/01-05_chtenie_koda.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:44](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если Цена = 250 Тогда` | parser: Ожидалось «КонецЕсли», получено «eof» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:52](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сумма = Цена * Количество - Скидка` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:60](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сообщить("Итого: " + Сумма)` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:68](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если Цена > 1000 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-05_chtenie_koda.md:102](../chapters/01_leksika/01-05_chtenie_koda.md) | `ЦенаЗаШтуку = 35` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:126](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если СтоимостьПокупки >= 10000 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-05_chtenie_koda.md:206](../chapters/01_leksika/01-05_chtenie_koda.md) | `Скидка = 10  // постоянным клиентам — десять процентов` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:214](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Здесь начинается расчёт скидки` | parser: Ожидалось «;», получено «ИначеЕсли» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:236](../chapters/01_leksika/01-05_chtenie_koda.md) | `ПроцентСкидки = 0  // По правилам — никаких скидок на акцион` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:244](../chapters/01_leksika/01-05_chtenie_koda.md) | `ПроцентСкидки = 0  // Присваиваем ПроцентСкидки значение 0` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:256](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Расчёт стоимости покупки с учётом скидки постоянного клие` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:312](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сумма = 500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-05_chtenie_koda.md:355](../chapters/01_leksika/01-05_chtenie_koda.md) | `Скидка = 0` | parser: Ожидалось «;», получено «Если» |
-| [chapters/01_leksika/01-05_chtenie_koda.md:372](../chapters/01_leksika/01-05_chtenie_koda.md) | `Имя = "Анна Петрова"` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:17](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:30](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 100` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:61](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 200` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:72](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 200` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:83](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ЦенаЗаЛитр = 80` | parser: Ожидалось «;», получено «ОбъёмВЛитрах» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:112](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 10` | parser: Ожидалось «;», получено «Б» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:130](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 10` | parser: Ожидалось «;», получено «Б» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:149](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 1500` | parser: Ожидалось «;», получено «ПроцентСкидки» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:162](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Цена >= 1000 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:174](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Возраст < 18 Тогда` | parser: Ожидалось «;», получено «eof» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:186](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Возраст < 18 Тогда` | чистый язык, не хватает контекста |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:232](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `СтоимостьПокупки = 3500` | parser: Ожидалось «;», получено «ПостоянныйКлиент» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:263](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `СтоимостьПокупки = 3500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:337](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:346](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 5` | parser: Ожидалось «;», получено «Б» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:357](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Возраст = 25` | parser: Ожидалось «;», получено «Если» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:368](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Сумма = 1500` | parser: Ожидалось «;», получено «ПроцентСкидки» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:382](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ОстатокРучек = 7` | parser: Ожидалось «;», получено «ОстатокКарандашей» |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:399](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:421](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 5` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:436](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Возраст = 25` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:459](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Сумма = 1500` | чистый язык, не хватает точек с запятой |
-| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:479](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ОстатокРучек = 7` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:11](../chapters/02_semantika/02-01_semantika.md) | `А = 5` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:32](../chapters/02_semantika/02-01_semantika.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:81](../chapters/02_semantika/02-01_semantika.md) | `Цена = 250` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:204](../chapters/02_semantika/02-01_semantika.md) | `Возраст = 25` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:222](../chapters/02_semantika/02-01_semantika.md) | `ЦенаЗаКилограмм = 150` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:236](../chapters/02_semantika/02-01_semantika.md) | `СтоимостьПокупки = 3500` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-01_semantika.md:314](../chapters/02_semantika/02-01_semantika.md) | `Скидка = Стоимость * ПроцентСкидки / 100` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:206](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Сообщить("Сумма покупки: " + Сумма)` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:289](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  10 + 5 * 2` | parser: Ожидалось «;», получено «)» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:324](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  Результат = "Цена: " + 100` | parser: Ожидалось «;», получено «)» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:344](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Среднее = (А + Б + В + Г) / 4` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:358](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `а)  10 + 5 * 2 = 10 + 10 = 20` | parser: Ожидалось «;», получено «)» |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:403](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `ЦенаЗаШтуку = 18` | parser: Ожидалось «;», получено «Количество» |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:216](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить(ТекстСообщения, СтатусСообщения)` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:364](../chapters/01_leksika/01-03_komanda_soobschit.md) | `а)  Сообщить("Привет")` | parser: Ожидалось «;», получено «)» |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:508](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Имя + ", тебе " + ВозрастВГодах + " лет, осталось до 30 — " ` | parser: Ожидалось «;», получено «+» |
+| [chapters/01_leksika/01-03_komanda_soobschit.md:522](../chapters/01_leksika/01-03_komanda_soobschit.md) | `Сообщить(Имя + ", тебе " + ВозрастВГодах + " лет, осталось д` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-04_komanda_esli.md:74](../chapters/01_leksika/01-04_komanda_esli.md) | `ДорогойТовар = (Цена > 1000)` | parser: Ожидалось «;», получено «Сообщить» |
+| [chapters/01_leksika/01-04_komanda_esli.md:217](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Цена > 1000 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-04_komanda_esli.md:259](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Цена > 5000 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-04_komanda_esli.md:386](../chapters/01_leksika/01-04_komanda_esli.md) | `Если Возраст < 7 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-04_komanda_esli.md:400](../chapters/01_leksika/01-04_komanda_esli.md) | `а)  Если Цена > 1000 Сообщить("Дорого"); КонецЕсли;` | parser: Ожидалось «;», получено «)» |
+| [chapters/01_leksika/01-05_chtenie_koda.md:50](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если Цена = 250 Тогда` | parser: Ожидалось «КонецЕсли», получено «eof» |
+| [chapters/01_leksika/01-05_chtenie_koda.md:58](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сумма = Цена * Количество - Скидка` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-05_chtenie_koda.md:66](../chapters/01_leksika/01-05_chtenie_koda.md) | `Сообщить("Итого: " + Сумма)` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-05_chtenie_koda.md:74](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если Цена > 1000 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-05_chtenie_koda.md:146](../chapters/01_leksika/01-05_chtenie_koda.md) | `Если СтоимостьПокупки >= 10000 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-05_chtenie_koda.md:240](../chapters/01_leksika/01-05_chtenie_koda.md) | `// Здесь начинается расчёт скидки` | parser: Ожидалось «;», получено «ИначеЕсли» |
+| [chapters/01_leksika/01-05_chtenie_koda.md:439](../chapters/01_leksika/01-05_chtenie_koda.md) | `Скидка = 0` | parser: Ожидалось «;», получено «Если» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:119](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ЦенаЗаЛитр = 80` | parser: Ожидалось «;», получено «ОбъёмВЛитрах» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:148](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 10` | parser: Ожидалось «;», получено «Б» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:166](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 10` | parser: Ожидалось «;», получено «Б» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:185](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Цена = 1500` | parser: Ожидалось «;», получено «ПроцентСкидки» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:198](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Цена >= 1000 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:210](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Возраст < 18 Тогда` | parser: Ожидалось «;», получено «eof» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:222](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Если Возраст < 18 Тогда` | чистый язык, не хватает контекста |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:268](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `СтоимостьПокупки = 3500` | parser: Ожидалось «;», получено «ПостоянныйКлиент» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:414](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `А = 5` | parser: Ожидалось «;», получено «Б» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:425](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Возраст = 25` | parser: Ожидалось «;», получено «Если» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:436](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `Сумма = 1500` | parser: Ожидалось «;», получено «ПроцентСкидки» |
+| [chapters/01_leksika/01-06_vosstanovlenie_koda.md:450](../chapters/01_leksika/01-06_vosstanovlenie_koda.md) | `ОстатокРучек = 7` | parser: Ожидалось «;», получено «ОстатокКарандашей» |
+| [chapters/02_semantika/02-01_semantika.md:376](../chapters/02_semantika/02-01_semantika.md) | `Скидка = Стоимость * ПроцентСкидки / 100` | parser: Ожидалось «;», получено «eof» |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:87](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `А = 5         (число)` | parser: Ожидалось «;», получено «(» |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:169](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `// Скидка действует только в выходные постоянным клиентам` | чистый язык, не хватает контекста |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:208](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `Если (Цена > 1000) И (Количество < 5) Тогда` | parser: Ожидалось «КонецЕсли», получено «eof» |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:216](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `А ИЛИ Б И В         // Сначала Б И В, потом ИЛИ` | parser: Ожидалось «;», получено «ИЛИ» |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:457](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `а)  100` | parser: Ожидалось «;», получено «)» |
-| [chapters/02_semantika/02-02_tipy_znacheniy.md:472](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `А = 5 + 3` | чистый язык, не хватает точек с запятой |
-| [chapters/02_semantika/02-02_tipy_znacheniy.md:490](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `а)  100 + 50` | parser: Ожидалось «;», получено «)» |
-| [chapters/02_semantika/02-02_tipy_znacheniy.md:504](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ВозрастКлиента = "25"` | parser: Ожидалось «;», получено «Если» |
-| [chapters/02_semantika/02-02_tipy_znacheniy.md:593](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `// Данные о продаже` | чистый язык, не хватает точек с запятой |
+| [chapters/02_semantika/02-02_tipy_znacheniy.md:508](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `а)  100 + 50` | parser: Ожидалось «;», получено «)» |
+| [chapters/02_semantika/02-02_tipy_znacheniy.md:522](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `ВозрастКлиента = "25"` | parser: Ожидалось «;», получено «Если» |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:17](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `Сумма = Цена * Количество;` | чистый язык, не хватает контекста |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:58](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `А = А + 1;` | чистый язык, не хватает контекста |
 | [chapters/02_semantika/02-03_vypolnit_stroku.md:87](../chapters/02_semantika/02-03_vypolnit_stroku.md) | `Итог = Цена * Количество - Скидка + Налог;` | чистый язык, не хватает контекста |
@@ -507,14 +507,14 @@
 
 | Где | Первая строка | Почему |
 |---|---|---|
-| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:292](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Ручки: 25 шт. по 18 руб., итого с НДС: <сумма> руб.` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:42](../chapters/01_leksika/01-04_komanda_esli.md) | `=    равно                  Цена = 100        →  Истина, есл` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:55](../chapters/01_leksika/01-04_komanda_esli.md) | `Сравнение      Что вычислится` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:104](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие> Тогда` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:186](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие> Тогда` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:224](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие 1> Тогда` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:333](../chapters/01_leksika/01-04_komanda_esli.md) | `А = 5 < 7` | плейсхолдеры в угловых скобках |
-| [chapters/01_leksika/01-04_komanda_esli.md:395](../chapters/01_leksika/01-04_komanda_esli.md) | `А = 5 < 7              →  Истина  (5 действительно меньше 7)` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-02_vyrazheniya_i_operatory.md:336](../chapters/01_leksika/01-02_vyrazheniya_i_operatory.md) | `Ручки: 25 шт. по 18 руб., итого с НДС: <сумма> руб.` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:49](../chapters/01_leksika/01-04_komanda_esli.md) | `=    равно                  Цена = 100        →  Истина, есл` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:62](../chapters/01_leksika/01-04_komanda_esli.md) | `Сравнение      Что вычислится` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:111](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие> Тогда` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:205](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие> Тогда` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:243](../chapters/01_leksika/01-04_komanda_esli.md) | `Если <условие 1> Тогда` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:375](../chapters/01_leksika/01-04_komanda_esli.md) | `А = 5 < 7` | плейсхолдеры в угловых скобках |
+| [chapters/01_leksika/01-04_komanda_esli.md:437](../chapters/01_leksika/01-04_komanda_esli.md) | `А = 5 < 7              →  Истина  (5 действительно меньше 7)` | плейсхолдеры в угловых скобках |
 | [chapters/02_semantika/02-02_tipy_znacheniy.md:190](../chapters/02_semantika/02-02_tipy_znacheniy.md) | `1. Арифметические: *, /, +, -    (сначала)` | плейсхолдеры в угловых скобках |
 | [chapters/03_struktura/03-02_tsikl_poka.md:49](../chapters/03_struktura/03-02_tsikl_poka.md) | `Пока <Условие> Цикл` | плейсхолдеры в угловых скобках |
 | [chapters/03_struktura/03-02_tsikl_poka.md:141](../chapters/03_struktura/03-02_tsikl_poka.md) | `Счётчик = <начало>;` | плейсхолдеры в угловых скобках |

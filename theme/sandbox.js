@@ -49,9 +49,29 @@
         return TRAINER + '?' + params.toString();
     }
 
+    /* Печатный вид листинга и его исполнимый вариант могут расходиться. Пример —
+     * первые модули «Иностранного языка»: там код идёт без точек с запятой, потому
+     * что их ещё не вводили. Ломать этот замысел ради тренажёра нельзя, поэтому
+     * рядом с блоком лежит HTML-комментарий с версией для запуска.
+     *
+     * Читатель его не видит; pandoc выбрасывает его вовсе, так что в EPUB, PDF и
+     * DOCX уезжает ровно печатный вид. */
+    function runnablePayload(pre) {
+        var node = pre.nextSibling;
+        while (node && node.nodeType === Node.TEXT_NODE && !node.textContent.trim()) {
+            node = node.nextSibling;
+        }
+        if (!node || node.nodeType !== Node.COMMENT_NODE) return null;
+        var text = node.textContent;
+        var head = text.indexOf('\n');
+        if (head < 0 || text.slice(0, head).trim() !== 'песочница') return null;
+        return text.slice(head + 1).replace(/\s+$/, '');
+    }
+
     function decorate(codeEl) {
         var pre = codeEl.closest('pre');
         if (!pre || pre.parentElement.classList.contains('sandbox-block')) return;
+        var payload = runnablePayload(pre);
 
         var wrap = document.createElement('div');
         wrap.className = 'sandbox-block';
@@ -69,13 +89,15 @@
         /* Ссылку считаем на клике: код может подмениться подсветкой уже после
          * загрузки, а textContent на момент клика точно окончательный. */
         link.addEventListener('click', function () {
-            link.href = sandboxUrl(codeEl.textContent.replace(/\n$/, ''));
+            link.href = sandboxUrl(payload || codeEl.textContent.replace(/\n$/, ''));
         });
         link.href = '#';
 
         var note = document.createElement('span');
         note.className = 'sandbox-note';
-        note.textContent = 'откроется в новой вкладке, код не запустится сам';
+        note.textContent = payload
+            ? 'в песочнице — с точками с запятой, иначе не запустится'
+            : 'откроется в новой вкладке, код не запустится сам';
 
         bar.appendChild(link);
         bar.appendChild(note);
