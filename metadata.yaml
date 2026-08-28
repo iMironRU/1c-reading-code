@@ -21,8 +21,7 @@ formats:
   html:     true
   docx:     true
   docx_a4:  false
-  site:     true
-
+  site:     true    # Сайт на GitHub Pages (mdBook)
 release_filter: "review"
 nightly_filter: "all"
 
