@@ -8,7 +8,7 @@
   - [§ 0.3. Что такое программа и что такое исполнение](chapters/00_vvedenie/00-03_chto_takoe_programma.md)
   - [§ 0.4. Компьютер буквален](chapters/00_vvedenie/00-04_kompyuter_bukvalen.md)
   - [§ 0.5. Где здесь 1С: первый взгляд на предмет](chapters/00_vvedenie/00-05_gde_zdes_1s.md)
-  - [✏️ Ответы к части 0](chapters/00_vvedenie/00-99_otvety.md)
+  - [Ответы к части 0](chapters/00_vvedenie/00-99_otvety.md)
 
 - [Модуль 1. Лексика]()
   - [§ 1.1. Переменные: имена для значений](chapters/01_leksika/01-01_peremennye.md)
@@ -17,14 +17,14 @@
   - [§ 1.4. Условие: «Если — Тогда — КонецЕсли»](chapters/01_leksika/01-04_komanda_esli.md)
   - [§ 1.5. Чтение кода вслух](chapters/01_leksika/01-05_chtenie_koda.md)
   - [§ 1.6. Восстановление кода с пропусками](chapters/01_leksika/01-06_vosstanovlenie_koda.md)
-  - [✏️ Ответы к части 1](chapters/01_leksika/01-99_otvety.md)
+  - [Ответы к части 1](chapters/01_leksika/01-99_otvety.md)
 
 - [Модуль 2. Семантика]()
   - [§ 2.1. Семантика: что значит понимать программу](chapters/02_semantika/02-01_semantika.md)
   - [§ 2.2. Типы значений: число, строка, булево, дата](chapters/02_semantika/02-02_tipy_znacheniy.md)
   - [§ 2.3. Что значит «выполнить» строку](chapters/02_semantika/02-03_vypolnit_stroku.md)
   - [§ 2.4. Перевод между кодом и русским языком](chapters/02_semantika/02-04_perevod.md)
-  - [✏️ Ответы к части 2](chapters/02_semantika/02-99_otvety.md)
+  - [Ответы к части 2](chapters/02_semantika/02-99_otvety.md)
 
 - [Модуль 3. Структура]()
   - [§ 3.1. Структура программы: последовательность, ветвление, цикл](chapters/03_struktura/03-01_struktura_programmy.md)
@@ -34,7 +34,7 @@
   - [§ 3.5. Параметры подробно: передача и область видимости](chapters/03_struktura/03-05_parametry_podrobno.md)
   - [§ 3.6. Блок-схемы как нотация](chapters/03_struktura/03-06_blok_shemy.md)
   - [§ 3.7. Прогонка алгоритмов на бумаге](chapters/03_struktura/03-07_progonka.md)
-  - [✏️ Ответы к части 3](chapters/03_struktura/03-99_otvety.md)
+  - [Ответы к части 3](chapters/03_struktura/03-99_otvety.md)
 
 - [Модуль 4. Паттерны]()
   - [§ 4.1. Что такое паттерн в коде](chapters/04_patterny/04-01_chto_takoe_pattern.md)
@@ -43,7 +43,7 @@
   - [§ 4.4. Агрегация: сумма, максимум, счётчик](chapters/04_patterny/04-04_agregaciya.md)
   - [§ 4.5. Проверки и защитный код](chapters/04_patterny/04-05_zashchitny_kod.md)
   - [§ 4.6. Распознавание паттернов в незнакомом коде](chapters/04_patterny/04-06_raspoznavanie.md)
-  - [✏️ Ответы к части 4](chapters/04_patterny/04-99_otvety.md)
+  - [Ответы к части 4](chapters/04_patterny/04-99_otvety.md)
 
 - [Модуль 5. Идиомы]()
   - [§ 5.1. Объекты, свойства и методы](chapters/05_idiomy/05-01_obekty_svoystva_metody.md)
@@ -52,7 +52,7 @@
   - [§ 5.4. Что такое ссылка и зачем она нужна](chapters/05_idiomy/05-04_chto_takoe_ssylka.md)
   - [§ 5.5. Типичные обороты реального кода](chapters/05_idiomy/05-05_tipichnye_oboroty.md)
   - [§ 5.6. Первое чтение фрагмента из настоящей конфигурации](chapters/05_idiomy/05-06_pervoe_chtenie.md)
-  - [✏️ Ответы к части 5](chapters/05_idiomy/05-99_otvety.md)
+  - [Ответы к части 5](chapters/05_idiomy/05-99_otvety.md)
 
 - [Модуль 6. Контекст]()
   - [§ 6.1. Где живёт код и кто его вызывает](chapters/06_kontekst/06-01_gde_zhivyot_kod.md)
@@ -60,7 +60,7 @@
   - [§ 6.3. Жизненный цикл документа: от создания до проведения](chapters/06_kontekst/06-03_zhiznennyy_tsikl_dokumenta.md)
   - [§ 6.4. Регистры: куда сохраняются результаты](chapters/06_kontekst/06-04_registry.md)
   - [§ 6.5. Перевод: бизнес-задача ↔ код](chapters/06_kontekst/06-05_perevod_zadacha_kod.md)
-  - [✏️ Ответы к части 6](chapters/06_kontekst/06-99_otvety.md)
+  - [Ответы к части 6](chapters/06_kontekst/06-99_otvety.md)
 
 - [Модуль 7. Качество]()
   - [§ 7.1. Что значит «хороший» код](chapters/07_kachestvo/07-01_chto_takoe_khoroshiy_kod.md)
@@ -69,7 +69,7 @@
   - [§ 7.4. Производительность: что замедляет код](chapters/07_kachestvo/07-04_proizvoditelnost.md)
   - [§ 7.5. Читаемость: имена, комментарии, структура](chapters/07_kachestvo/07-05_chitaemost.md)
   - [§ 7.6. Критическое чтение: читать и оценивать](chapters/07_kachestvo/07-06_kriticheskoe_chtenie.md)
-  - [✏️ Ответы к части 7](chapters/07_kachestvo/07-99_otvety.md)
+  - [Ответы к части 7](chapters/07_kachestvo/07-99_otvety.md)
 
 - [Модуль 8. Система]()
   - [§ 8.1. Куда уходят данные после нажатия «Провести»](chapters/08_sistema/08-01_put_dannykh.md)
@@ -78,14 +78,14 @@
   - [§ 8.4. Три барьера впереди](chapters/08_sistema/08-04_baryery.md)
   - [§ 8.5. Директивы и области](chapters/08_sistema/08-05_direktivy.md)
   - [§ 8.6. Что такое типовая конфигурация](chapters/08_sistema/08-06_tipovaya.md)
-  - [✏️ Ответы к части 8](chapters/08_sistema/08-99_otvety.md)
+  - [Ответы к части 8](chapters/08_sistema/08-99_otvety.md)
 
 - [Модуль 9. Завершение]()
   - [§ 9.1. Контрольная задача: читать и пересказывать](chapters/09_zavershenie/09-01_kontrolnaya_zadacha.md)
   - [§ 9.2. Установка 1С и первое самостоятельное чтение кода](chapters/09_zavershenie/09-02_ustanovka.md)
   - [§ 9.3. Куда идти дальше: маршрут самостоятельного изучения](chapters/09_zavershenie/09-03_kuda_idti.md)
   - [§ 9.4. Как читать незнакомый код: рабочие приёмы](chapters/09_zavershenie/09-04_kak_chitat.md)
-  - [✏️ Ответы к части 9](chapters/09_zavershenie/09-99_otvety.md)
+  - [Ответы к части 9](chapters/09_zavershenie/09-99_otvety.md)
 
 - [index.md]()
   - [1С как иностранный язык](chapters/index.md)

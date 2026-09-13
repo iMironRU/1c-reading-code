@@ -1,5 +1,6 @@
 title: "1С как иностранный язык"
 subtitle: "Учебный курс для абсолютных новичков"
+series: "Линия «Чтение 1С» · книга первая"
 author: "Мирошниченко Александр (aka iMiron)"
 author_url: "https://github.com/iMironRU"
 language: ru
@@ -11,7 +12,7 @@ book_id: "1c-reading-code"
 
 # Отслеживание шаблона
 template_repo: "https://github.com/iMironRU/book-template"
-template_version: "v0.2.1"
+template_version: "v0.6.1"
 
 formats:
   epub:     true
