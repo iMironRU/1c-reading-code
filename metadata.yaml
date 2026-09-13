@@ -12,7 +12,7 @@ book_id: "1c-reading-code"
 
 # Отслеживание шаблона
 template_repo: "https://github.com/iMironRU/book-template"
-template_version: "v0.6.1"
+template_version: "v0.7.0"
 
 formats:
   epub:     true
