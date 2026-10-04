@@ -375,22 +375,30 @@ cmd_build() {
         echo "build-filter: \"${filter}\""
     } > build-info.yaml
 
-    # Собрать список файлов по статусу
+    # Собрать список файлов: вводная часть, шмуцтитулы глав, параграфы.
+    # Порядок и структуру считает scripts/book-structure.py — он же опускает
+    # заголовки параграфов на уровень, чтобы главой стала глава, а не параграф.
     local file_list=()
-    while IFS= read -r -d '' file; do
-        local status
-        status=$(python3 -c "
+    if [[ -f scripts/book-structure.py ]]; then
+        while IFS= read -r file; do
+            [[ -n "$file" ]] && file_list+=("$file")
+        done < <(python3 scripts/book-structure.py --filter "$filter")
+    else
+        while IFS= read -r -d '' file; do
+            local status
+            status=$(python3 -c "
 import re
 content = open('${file}').read()
 m = re.search(r'^---.*?status:\s*(\w+).*?---', content, re.DOTALL)
 print(m.group(1) if m else 'ready')
 " 2>/dev/null || echo "ready")
-        case "$filter" in
-            ready)  [[ "$status" == "ready" ]] && file_list+=("$file") ;;
-            review) [[ "$status" == "ready" || "$status" == "review" ]] && file_list+=("$file") ;;
-            all)    file_list+=("$file") ;;
-        esac
-    done < <(find chapters -name "*.md" ! -name "_*.md" -print0 | sort -z)
+            case "$filter" in
+                ready)  [[ "$status" == "ready" ]] && file_list+=("$file") ;;
+                review) [[ "$status" == "ready" || "$status" == "review" ]] && file_list+=("$file") ;;
+                all)    file_list+=("$file") ;;
+            esac
+        done < <(find chapters -name "*.md" ! -name "_*.md" -print0 | sort -z)
+    fi
 
     if [[ ${#file_list[@]} -eq 0 ]]; then
         warn "Нет файлов для сборки с фильтром '${filter}'"
@@ -430,6 +438,8 @@ print(m.group(1) if m else 'ready')
         --metadata-file=build-info.yaml
         --toc
         --toc-depth=3
+        # Глава — это глава, а не параграф: уровень выставляет book-structure.py
+        --top-level-division=chapter
         --standalone
         # Служебные комментарии (полезная нагрузка для песочницы) читателю
         # не нужны: в вёрстке они невидимы, но в EPUB уезжают мёртвым грузом.
@@ -1101,6 +1111,17 @@ cmd_sandbox_links() {
     python3 scripts/sandbox-links.py "$@"
 }
 
+# ─── QR ──────────────────────────────────────────────────────────────────────
+cmd_qr() {
+    if [[ ! -f scripts/qr-registry.py ]]; then
+        error "scripts/qr-registry.py не найден. Запустите: ./book.sh sync"
+        exit 1
+    fi
+    header "Реестр коротких кодов для qr.imiron.ru"
+    echo ""
+    python3 scripts/qr-registry.py "$@"
+}
+
 # ─── TASKS ───────────────────────────────────────────────────────────────────
 cmd_tasks() {
     if [[ ! -d tasks ]]; then
@@ -1125,6 +1146,7 @@ show_help() {
     echo -e "    ${CYAN}read <файлы>${RESET}      Копия параграфа для чтения (пометки — списком в конце)"
     echo -e "    ${CYAN}summary${RESET}           Перегенерировать SUMMARY.md"
     echo -e "    ${CYAN}sandbox-links${RESET}     Обновить ссылки в песочницу под блоками «запрос,песочница»"
+    echo -e "    ${CYAN}qr [--check]${RESET}      Реестр коротких кодов: главы, листинги, иллюстрации"
     echo -e "    ${CYAN}tasks${RESET}             Собрать tasks/*.yaml в tasks.json (задачи BSLexicon)"
     echo -e "    ${CYAN}release${RESET}           Выпустить версию (changelog + git tag)"
     echo -e "    ${CYAN}sync${RESET}              Проверить и применить обновления шаблона"
@@ -1175,6 +1197,7 @@ case "$COMMAND" in
     lint)    cmd_lint "$@" ;;
     read)    cmd_read "$@" ;;
     sandbox-links) cmd_sandbox_links "$@" ;;
+    qr)      check_metadata; cmd_qr "$@" ;;
     summary) check_metadata; _generate_summary "${1:-all}"; success "→ SUMMARY.md" ;;
     tasks)   check_metadata; cmd_tasks "$@" ;;
     release) cmd_release ;;
