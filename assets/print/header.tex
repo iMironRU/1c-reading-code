@@ -73,16 +73,37 @@
     \node[anchor=base] at (4.5mm,1.9mm) {\sffamily\bfseries\footnotesize !};
   \end{tikzpicture}}
 
+% Метка стоит в наружном поле — на нечётной полосе справа, на чётной слева.
+% Сторону нельзя взять из \value{page}: материал попадает в вертикальный
+% список раньше, чем решится, на какой он полосе. \strictpagecheck узнаёт
+% её через метку в .aux — отсюда лишний прогон при первой сборке.
+\usepackage{changepage}
+\strictpagecheck
+
+% Полная ширина линейки: полоса набора плюс отбивка и метка в поле.
+\newlength{\ruleout}
+\setlength{\ruleout}{\dimexpr\textwidth+\marginparsep+\marklen\relax}
+
 % Верхняя линейка уходит в поле и держит метку. \needspace не даёт
 % разорвать страницу между линейкой, меткой и первыми строками кода.
+\newcommand{\markbox}[1]{%
+  \raisebox{-\height}[0pt][0pt]{%
+    \parbox[t]{\marklen}{\centering\vspace{3pt}#1}}}
 \newcommand{\codetop}[1]{%
   \par\addvspace{10pt}\needspace{26mm}\nointerlineskip
+  \checkoddpage
   % линейка и метка живут в боксе нулевой ширины: иначе TeX считает
   % выход в поле переполнением строки и засоряет лог
   \noindent\hbox to \textwidth{\hbox to 0pt{%
-    \rule[0.6ex]{\dimexpr\textwidth+\marginparsep+\marklen\relax}{0.8pt}%
-    \hspace{-\marklen}\raisebox{-\height}[0pt][0pt]{%
-      \parbox[t]{\marklen}{\centering\vspace{3pt}#1}}\hss}\hfil}%
+    \ifoddpage
+      \rule[0.6ex]{\ruleout}{0.8pt}%
+      \hspace{-\marklen}\markbox{#1}%
+    \else
+      \hspace{-\dimexpr\marklen+\marginparsep\relax}%
+      \rule[0.6ex]{\ruleout}{0.8pt}%
+      \hspace{-\ruleout}\markbox{#1}%
+    \fi
+    \hss}\hfil}%
   \par\nointerlineskip\vspace{-0.6ex}}
 
 \newcommand{\qrmark}[1]{\codetop{\includegraphics[width=14mm]{qr/#1.png}\\[2pt]%
