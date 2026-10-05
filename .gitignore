@@ -28,3 +28,4 @@ book-template-v0.2-handoff.zip
 tasks.json
 .build-src/
 .build-structure/
+.build-print/

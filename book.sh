@@ -1111,6 +1111,18 @@ cmd_sandbox_links() {
     python3 scripts/sandbox-links.py "$@"
 }
 
+# ─── PRINT ──────────────────────────────────────────────────────────────────
+cmd_print() {
+    if [[ ! -f scripts/print-build.py ]]; then
+        error "scripts/print-build.py не найден. Запустите: ./book.sh sync"
+        exit 1
+    fi
+    require_cmd pandoc python3
+    header "Печатный PDF по канону серии"
+    echo ""
+    python3 scripts/print-build.py "$@"
+}
+
 # ─── QR ──────────────────────────────────────────────────────────────────────
 cmd_qr() {
     if [[ ! -f scripts/qr-registry.py ]]; then
@@ -1147,6 +1159,7 @@ show_help() {
     echo -e "    ${CYAN}summary${RESET}           Перегенерировать SUMMARY.md"
     echo -e "    ${CYAN}sandbox-links${RESET}     Обновить ссылки в песочницу под блоками «запрос,песочница»"
     echo -e "    ${CYAN}qr [--check]${RESET}      Реестр коротких кодов: главы, листинги, иллюстрации"
+    echo -e "    ${CYAN}print [--keep]${RESET}    Печатный PDF: вёрстка по канону серии"
     echo -e "    ${CYAN}tasks${RESET}             Собрать tasks/*.yaml в tasks.json (задачи BSLexicon)"
     echo -e "    ${CYAN}release${RESET}           Выпустить версию (changelog + git tag)"
     echo -e "    ${CYAN}sync${RESET}              Проверить и применить обновления шаблона"
@@ -1198,6 +1211,7 @@ case "$COMMAND" in
     read)    cmd_read "$@" ;;
     sandbox-links) cmd_sandbox_links "$@" ;;
     qr)      check_metadata; cmd_qr "$@" ;;
+    print)   check_metadata; cmd_print "$@" ;;
     summary) check_metadata; _generate_summary "${1:-all}"; success "→ SUMMARY.md" ;;
     tasks)   check_metadata; cmd_tasks "$@" ;;
     release) cmd_release ;;

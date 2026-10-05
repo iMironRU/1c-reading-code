@@ -45,7 +45,9 @@ import yaml
 ALPHABET = "0123456789ABCDEFGHJKMNPQRSTVWXY"      # 31 знак: без I, L, O, U, Z
 P, MUL = 31, 7                                      # x*y = MUL·(x−y) mod P
 REGISTRY = "assets/qr/registry.yaml"
+IMGDIR = "assets/qr/img"
 TRAINER = "https://imironru.github.io/BSLexicon/"
+DOMAIN = "qr.imiron.ru"
 FENCE = re.compile(r"^```([^\n]*)\n(.*?)^```[ \t]*$", re.S | re.M)
 
 
@@ -154,6 +156,28 @@ def scan(meta):
     return found
 
 
+def draw(codes):
+    """Картинки меток кладём рядом с реестром и держим в репозитории:
+    тогда печатная сборка не зависит от библиотеки, которой может не быть
+    на машине сборки."""
+    try:
+        import segno
+    except ImportError:
+        print("  segno не установлен — картинки меток не перерисованы "
+              "(pip install segno)")
+        return
+    os.makedirs(IMGDIR, exist_ok=True)
+    made = 0
+    for code in codes:
+        path = os.path.join(IMGDIR, code + ".png")
+        if os.path.exists(path):
+            continue
+        segno.make(DOMAIN + "/" + code, error="q").save(path, scale=16, border=2)
+        made += 1
+    if made:
+        print(f"  нарисовано картинок меток: {made} → {IMGDIR}/")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
@@ -215,6 +239,7 @@ def main():
         return
     os.makedirs(os.path.dirname(REGISTRY), exist_ok=True)
     open(REGISTRY, "w", encoding="utf-8").write(text)
+    draw(sorted(k for k, v in out.items() if not v.get("retired")))
     print(f"кодов всего: {len(out)}, выдано новых: {len(new)}, выведено из обращения: {len(retired)}")
     kinds = {}
     for v in out.values():

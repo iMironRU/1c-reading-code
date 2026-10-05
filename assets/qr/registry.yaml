@@ -4,7 +4,7 @@ codes:
   K09SBB:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 6
+    ord: 5
     fp: 82ed8f3ab833
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0KTRg9C90LrRhtC40Y8g0JLRi9GH0LjRgdC70LjRgtGM0J3QlNChKNCh0YPQvNC80LAsINCh0YLQsNCy0LrQsNCd0JTQoSkKICAgINCS0L7Qt9Cy0YDQsNGCINCh0YPQvNC80LAgKiDQodGC0LDQstC60LDQndCU0KEgLyAxMDA7CtCa0L7QvdC10YbQpNGD0L3QutGG0LjQuDs&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -81,7 +81,7 @@ codes:
   K11EPA:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 7
+    ord: 6
     fp: e20aba04d8b2
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0J_RgNC-0YbQtdC00YPRgNCwINCd0LDQv9C10YfQsNGC0LDRgtGM0J_RgNC40LLQtdGC0YHRgtCy0LjQtSjQmNC80Y8pCiAgICDQoNC10LfRg9C70YzRgtCw0YIgPSAi0JTQvtCx0YDRi9C5INC00LXQvdGMLCAiICsg0JjQvNGPICsgIiEiOwrQmtC-0L3QtdGG0J_RgNC-0YbQtdC00YPRgNGLOwoK0KHQvtC-0LHRidC10L3QuNC1ID0g0J3QsNC_0LXRh9Cw0YLQsNGC0YzQn9GA0LjQstC10YLRgdGC0LLQuNC1KCLQkNC70LXQutGB0LDQvdC00YAiKTsK0KHQvtC-0LHRidC40YLRjCjQodC-0L7QsdGJ0LXQvdC40LUpOw&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -354,14 +354,14 @@ codes:
   K5TCWP:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 9
+    ord: 8
     fp: 4f7e7be67f40
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0J_RgNC-0YbQtdC00YPRgNCwINCd0LDQv9C10YfQsNGC0LDRgtGM0J_RgNC40LLQtdGC0YHRgtCy0LjQtSjQmNC80Y8pCiAgICDQodC-0L7QsdGJ0LjRgtGMKCLQlNC-0LHRgNGL0Lkg0LTQtdC90YwsICIgKyDQmNC80Y8gKyAiISIpOwrQmtC-0L3QtdGG0J_RgNC-0YbQtdC00YPRgNGLOwoK0J3QsNC_0LXRh9Cw0YLQsNGC0YzQn9GA0LjQstC10YLRgdGC0LLQuNC1KCLQkNC70LXQutGB0LDQvdC00YAiKTs&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
   K60HE6:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 10
+    ord: 9
     fp: affd2d576321
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0KTRg9C90LrRhtC40Y8g0JzQsNC60YHQuNC80YPQvNCU0LLRg9GFKNCQLCDQkSkKICAgINCV0YHQu9C4INCQID49INCRINCi0L7Qs9C00LAKICAgICAgICDQktC-0LfQstGA0LDRgiDQkDsKICAgINCY0L3QsNGH0LUKICAgICAgICDQktC-0LfQstGA0LDRgiDQkTsKICAgINCa0L7QvdC10YbQldGB0LvQuDsK0JrQvtC90LXRhtCk0YPQvdC60YbQuNC4OwoK0KDQtdC30YPQu9GM0YLQsNGCID0g0JzQsNC60YHQuNC80YPQvNCU0LLRg9GFKDcsIDEyKTsK0KHQvtC-0LHRidC40YLRjCjQoNC10LfRg9C70YzRgtCw0YIpOw&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -375,7 +375,7 @@ codes:
   K63E1N:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 4
+    ord: 3
     fp: 0e65768a10f3
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0KTRg9C90LrRhtC40Y8g0KDQsNGB0YHRh9C40YLQsNGC0YzQodC60LjQtNC60YMo0KHRg9C80LzQsCwg0J_RgNC-0YbQtdC90YLQodC60LjQtNC60LgpCiAgICDQodGD0LzQvNCw0KHQutC40LTQutC4ID0g0KHRg9C80LzQsCAqINCf0YDQvtGG0LXQvdGC0KHQutC40LTQutC4IC8gMTAwOwogICAg0JLQvtC30LLRgNCw0YIg0KHRg9C80LzQsNCh0LrQuNC00LrQuDsK0JrQvtC90LXRhtCk0YPQvdC60YbQuNC4Ow&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -1033,7 +1033,7 @@ codes:
   KHAN62:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 8
+    ord: 7
     fp: f3e2e6b6c567
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0KTRg9C90LrRhtC40Y8g0J3QsNC_0LXRh9Cw0YLQsNGC0YzQn9GA0LjQstC10YLRgdGC0LLQuNC1KNCY0LzRjykKICAgINCS0L7Qt9Cy0YDQsNGCICLQlNC-0LHRgNGL0Lkg0LTQtdC90YwsICIgKyDQmNC80Y8gKyAiISI7CtCa0L7QvdC10YbQpNGD0L3QutGG0LjQuDsKCtCh0L7QvtCx0YnQtdC90LjQtSA9INCd0LDQv9C10YfQsNGC0LDRgtGM0J_RgNC40LLQtdGC0YHRgtCy0LjQtSgi0JDQu9C10LrRgdCw0L3QtNGAIik7CtCh0L7QvtCx0YnQuNGC0Ywo0KHQvtC-0LHRidC10L3QuNC1KTs&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -1170,6 +1170,7 @@ codes:
     fp: a5b90e95642e
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0J_RgNC-0YbQtdC00YPRgNCwINCd0LDQv9C10YfQsNGC0LDRgtGM0KjQsNC_0LrRg9Cn0LXQutCwKCkKICAgINCh0L7QvtCx0YnQuNGC0YwoItCc0LDQs9Cw0LfQuNC9INCa0LDQvdGG0YLQvtCy0LDRgNGLIik7CiAgICDQodC-0L7QsdGJ0LjRgtGMKCItLS0tLS0tLS0tLS0tLS0tLS0tLSIpOwrQmtC-0L3QtdGG0J_RgNC-0YbQtdC00YPRgNGLOw&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
+    retired: true
   KK6KPY:
     kind: песочница
     file: chapters/01_leksika/01-02_vyrazheniya_i_operatory.md
@@ -1285,7 +1286,7 @@ codes:
   KN0QKS:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 5
+    ord: 4
     fp: 4a4f2509fd4e
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0J_RgNC-0YbQtdC00YPRgNCwINCd0LDQv9C10YfQsNGC0LDRgtGM0KDQsNC30LTQtdC70LjRgtC10LvRjCgpCiAgICDQodC-0L7QsdGJ0LjRgtGMKCItLS0tLS0tLS0tLS0tLS0tLS0tLSIpOwrQmtC-0L3QtdGG0J_RgNC-0YbQtdC00YPRgNGLOwoK0KTRg9C90LrRhtC40Y8g0KDQsNGB0YHRh9C40YLQsNGC0YzQodC60LjQtNC60YMo0KHRg9C80LzQsCwg0J_RgNC-0YbQtdC90YLQodC60LjQtNC60LgpCiAgICDQktC-0LfQstGA0LDRgiDQodGD0LzQvNCwICog0J_RgNC-0YbQtdC90YLQodC60LjQtNC60LggLyAxMDA7CtCa0L7QvdC10YbQpNGD0L3QutGG0LjQuDsKCtCf0YDQvtGG0LXQtNGD0YDQsCDQndCw0L_QtdGH0LDRgtCw0YLRjNCn0LXQuijQotC-0LLQsNGALCDQptC10L3QsCwg0J_RgNC-0YbQtdC90YLQodC60LjQtNC60LgpCiAgICDQndCw0L_QtdGH0LDRgtCw0YLRjNCg0LDQt9C00LXQu9C40YLQtdC70YwoKTsKICAgINCh0L7QvtCx0YnQuNGC0YwoItCi0L7QstCw0YA6ICIgKyDQotC-0LLQsNGAKTsKICAgINCh0L7QvtCx0YnQuNGC0YwoItCm0LXQvdCwOiAiICsg0KbQtdC90LAgKyAiINGA0YPQsS4iKTsKICAgINCh0LrQuNC00LrQsCA9INCg0LDRgdGB0YfQuNGC0LDRgtGM0KHQutC40LTQutGDKNCm0LXQvdCwLCDQn9GA0L7RhtC10L3RgtCh0LrQuNC00LrQuCk7CiAgICDQmNGC0L7Qs9C-0JrQntC_0LvQsNGC0LUgPSDQptC10L3QsCAtINCh0LrQuNC00LrQsDsKICAgINCh0L7QvtCx0YnQuNGC0YwoItCh0LrQuNC00LrQsDogIiArINCh0LrQuNC00LrQsCArICIg0YDRg9CxLiIpOwogICAg0KHQvtC-0LHRidC40YLRjCgi0JjRgtC-0LPQvjogIiArINCY0YLQvtCz0L7QmtCe0L_Qu9Cw0YLQtSArICIg0YDRg9CxLiIpOwogICAg0J3QsNC_0LXRh9Cw0YLQsNGC0YzQoNCw0LfQtNC10LvQuNGC0LXQu9GMKCk7CtCa0L7QvdC10YbQn9GA0L7RhtC10LTRg9GA0Ys7CgrQndCw0L_QtdGH0LDRgtCw0YLRjNCn0LXQuigi0KDRg9GH0LrQsCIsIDM1LCAxMCk7CtCd0LDQv9C10YfQsNGC0LDRgtGM0KfQtdC6KCLQotC10YLRgNCw0LTRjCIsIDYwLCA1KTs&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
@@ -1782,7 +1783,7 @@ codes:
   KWVNHG:
     kind: песочница
     file: chapters/03_struktura/03-04_procedury_i_funkcii.md
-    ord: 11
+    ord: 10
     fp: 2e702838728e
     title: § 3.4. Процедуры и функции
     target: https://imironru.github.io/BSLexicon/?code=0J_RgNC-0YbQtdC00YPRgNCwINCd0LDQv9C10YfQsNGC0LDRgtGM0KHRgtGA0L7QutGDKNCi0L7QstCw0YAsINCm0LXQvdCwKQogICAg0KHQvtC-0LHRidC40YLRjCjQotC-0LLQsNGAICsgIiDigJQgIiArINCm0LXQvdCwICsgIiDRgNGD0LEuIik7CtCa0L7QvdC10YbQn9GA0L7RhtC10LTRg9GA0Ys7CgrQndCw0L_QtdGH0LDRgtCw0YLRjNCh0YLRgNC-0LrRgygi0KDRg9GH0LrQsCIsIDM1KTsK0J3QsNC_0LXRh9Cw0YLQsNGC0YzQodGC0YDQvtC60YMoItCa0LDRgNCw0L3QtNCw0YgiLCAxNSk7CtCd0LDQv9C10YfQsNGC0LDRgtGM0KHRgtGA0L7QutGDKCLQotC10YLRgNCw0LTRjCIsIDYwKTs&source=https%3A%2F%2Fimiron.ru%2F1c-reading-code%2Fchapters%2F03_struktura%2F03-04_procedury_i_funkcii.html&title=%C2%A7%203.4.%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D1%8B%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8
